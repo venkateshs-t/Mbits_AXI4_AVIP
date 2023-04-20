@@ -1,5 +1,5 @@
-`ifndef AXI4_non_blocking_only_read_response_out_of_order_test_INCLUDED_
-`define AXI4_non_blocking_only_read_response_out_of_order_test_INCLUDED_
+`ifndef AXI4_NON_BLOCKING_ONLY_READ_RESPONSE_OUT_OF_ORDER_TEST_INCLUDED_
+`define AXI4_NON_BLOCKING_ONLY_READ_RESPONSE_OUT_OF_ORDER_TEST_INCLUDED_
 
 //--------------------------------------------------------------------------------------------
 // Class: axi4_wrap_burst_read_test
@@ -8,9 +8,9 @@
 class axi4_non_blocking_only_read_response_out_of_order_test extends axi4_base_test;
   `uvm_component_utils(axi4_non_blocking_only_read_response_out_of_order_test)
 
-  //Variable : axi4_virtual_nbk_write_read_response_out_of_order_seq_h
-  //Instatiation of axi4_virtual_nbk_write_read_response_out_of_order_seq
-  axi4_virtual_nbk_write_read_response_out_of_order_seq axi4_virtual_nbk_write_read_response_out_of_order_seq_h;
+  //Variable : axi4_virtual_nbk_only_read_response_out_of_order_seq_h
+  //Instatiation of axi4_virtual_nbk_only_read_response_out_of_order_seq
+  axi4_virtual_nbk_only_read_response_out_of_order_seq axi4_virtual_nbk_only_read_response_out_of_order_seq_h;
   
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
@@ -59,12 +59,11 @@ endfunction: setup_axi4_slave_agent_cfg
 //--------------------------------------------------------------------------------------------
 task axi4_non_blocking_only_read_response_out_of_order_test::run_phase(uvm_phase phase);
 
-  axi4_virtual_nbk_write_read_response_out_of_order_seq_h=axi4_virtual_nbk_write_read_response_out_of_order_seq::type_id::create("axi4_virtual_nbk_write_read_response_out_of_order_seq_h");
+  axi4_virtual_nbk_only_read_response_out_of_order_seq_h=axi4_virtual_nbk_only_read_response_out_of_order_seq::type_id::create("axi4_virtual_nbk_only_read_response_out_of_order_seq_h");
   `uvm_info(get_type_name(),$sformatf("axi4_non_blocking_only_read_response_out_of_order_test"),UVM_LOW);
   phase.raise_objection(this);
-  axi4_virtual_nbk_write_read_response_out_of_order_seq_h.start(axi4_env_h.axi4_virtual_seqr_h);
+  axi4_virtual_nbk_only_read_response_out_of_order_seq_h.start(axi4_env_h.axi4_virtual_seqr_h);
   phase.drop_objection(this);
-
 endtask : run_phase
 
 `endif

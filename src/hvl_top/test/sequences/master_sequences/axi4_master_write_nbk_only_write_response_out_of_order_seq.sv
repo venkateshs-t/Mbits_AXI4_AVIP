@@ -1,6 +1,6 @@
 
-`ifndef axi4_master_write_nbk_only_write_response_out_of_order_seq_INCLUDED_
-`define axi4_master_write_nbk_only_write_response_out_of_order_seq_INCLUDED_
+`ifndef AXI4_MASTER_WRITE_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
+`define AXI4_MASTER_WRITE_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 
 
 
