@@ -35,6 +35,7 @@ function axi4_virtual_nbk_only_read_response_out_of_order_seq::new(string name =
   super.new(name);
 endfunction : new
 
+
 //--------------------------------------------------------------------------------------------
 // Task - body
 // Creates and starts the data of master and slave sequences
@@ -61,7 +62,6 @@ task axi4_virtual_nbk_only_read_response_out_of_order_seq::body();
     end
   join_none
 
-
   fork 
     begin: T1_WRITE_READ
       repeat(5) begin
@@ -77,5 +77,4 @@ task axi4_virtual_nbk_only_read_response_out_of_order_seq::body();
  endtask : body
 
 `endif
-
 

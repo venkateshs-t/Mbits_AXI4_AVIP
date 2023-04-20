@@ -1,6 +1,6 @@
-
 `ifndef AXI4_VIRTUAL_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 `define AXI4_VIRTUAL_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
+
 
 //--------------------------------------------------------------------------------------------
 // Class: axi4_virtual_nbk_only_write_response_out_of_order_seq
@@ -23,6 +23,7 @@ class axi4_virtual_nbk_only_write_response_out_of_order_seq extends axi4_virtual
   extern function new(string name = "axi4_virtual_nbk_only_write_response_out_of_order_seq");
   extern task body();
 endclass : axi4_virtual_nbk_only_write_response_out_of_order_seq
+
 
 //--------------------------------------------------------------------------------------------
 // Construct: new

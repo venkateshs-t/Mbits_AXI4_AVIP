@@ -1,12 +1,12 @@
 `ifndef AXI4_SLAVE_WRITE_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 `define AXI4_SLAVE_WRITE_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
-
 //--------------------------------------------------------------------------------------------
 // Class: axi4_slave_write_nbk_only_write_response_out_of_order_seq
 // Extends the axi4_slave_base_seq and randomises the req item
 //--------------------------------------------------------------------------------------------
 class axi4_slave_write_nbk_only_write_response_out_of_order_seq extends axi4_slave_nbk_base_seq;
   `uvm_object_utils(axi4_slave_write_nbk_only_write_response_out_of_order_seq)
+
 
   //-------------------------------------------------------
   // Externally defined Tasks and Functions

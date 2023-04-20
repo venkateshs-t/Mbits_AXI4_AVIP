@@ -1,14 +1,12 @@
-
-
 `ifndef AXI4_MASTER_READ_NBK_ONLY_READ_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 `define AXI4_MASTER_READ_NBK_ONLY_READ_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_ 
+
 //--------------------------------------------------------------------------------------------
 // Class: axi4_master_read_nbk_only_read_response_out_of_order_seq
 // Extends the axi4_master_nbk_base_seq and randomises the req item
 //--------------------------------------------------------------------------------------------
 class axi4_master_read_nbk_only_read_response_out_of_order_seq extends axi4_master_nbk_base_seq;
   `uvm_object_utils(axi4_master_read_nbk_only_read_response_out_of_order_seq)
-
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------

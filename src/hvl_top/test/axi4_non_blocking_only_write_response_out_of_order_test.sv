@@ -1,6 +1,7 @@
 `ifndef AXI4_NON_BLOCKING_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 `define AXI4_NON_BLOCKING_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_ 
 
+
 //--------------------------------------------------------------------------------------------
 // Class axi4_non_blocking_only_write_response_out_of_order_test
 // Extends the base test and starts the virtual sequenceof write
@@ -20,7 +21,6 @@ class axi4_non_blocking_only_write_response_out_of_order_test extends axi4_base_
   
   extern virtual function void setup_axi4_slave_agent_cfg();
   extern virtual task run_phase(uvm_phase phase);
-
 endclass : axi4_non_blocking_only_write_response_out_of_order_test
 
 //--------------------------------------------------------------------------------------------

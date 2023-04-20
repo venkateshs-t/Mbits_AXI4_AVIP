@@ -1,6 +1,7 @@
 `ifndef AXI4_NON_BLOCKING_ONLY_READ_RESPONSE_OUT_OF_ORDER_TEST_INCLUDED_
 `define AXI4_NON_BLOCKING_ONLY_READ_RESPONSE_OUT_OF_ORDER_TEST_INCLUDED_
 
+
 //--------------------------------------------------------------------------------------------
 // Class: axi4_wrap_burst_read_test
 // Extends the base test and starts the virtual sequenceof write
@@ -48,7 +49,6 @@ function void axi4_non_blocking_only_read_response_out_of_order_test::setup_axi4
     axi4_env_cfg_h.axi4_slave_agent_cfg_h[i].read_data_mode = SLAVE_MEM_MODE;
   end
 endfunction: setup_axi4_slave_agent_cfg
-
 
 //--------------------------------------------------------------------------------------------
 // Task: run_phase

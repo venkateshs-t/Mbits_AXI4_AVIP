@@ -34,7 +34,8 @@ endfunction : new
 task axi4_slave_read_nbk_only_read_response_out_of_order_seq::body();
   super.body();
   req.transfer_type=NON_BLOCKING_READ;
-  
+ 
+
   start_item(req);
   if(!req.randomize())begin
     `uvm_fatal("axi4","Rand failed");
@@ -42,6 +43,7 @@ task axi4_slave_read_nbk_only_read_response_out_of_order_seq::body();
   req.print();
   finish_item(req);
   
+
 endtask : body
 
 `endif

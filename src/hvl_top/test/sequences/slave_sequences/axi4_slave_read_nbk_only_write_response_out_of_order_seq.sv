@@ -1,6 +1,5 @@
 `ifndef AXI4_SLAVE_READ_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
 `define AXI4_SLAVE_READ_NBK_ONLY_WRITE_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
-
 //--------------------------------------------------------------------------------------------
 // Class: axi4_slave_read_nbk_only_write_response_out_of_order_seq
 // Extends the axi4_slave_nbk_base_seq and randomises the req item
@@ -40,7 +39,8 @@ task axi4_slave_read_nbk_only_write_response_out_of_order_seq::body();
   end
   req.print();
   finish_item(req);
-  
+
+
 endtask : body
 
 `endif

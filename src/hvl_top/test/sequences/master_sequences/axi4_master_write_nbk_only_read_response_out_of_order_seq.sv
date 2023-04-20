@@ -1,7 +1,5 @@
-
 `ifndef AXI4_MASTER_WRITE_NBK_ONLY_READ_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED
 `define AXI4_MASTER_WRITE_NBK_ONLY_READ_RESPONSE_OUT_OF_ORDER_SEQ_INCLUDED_
-
 //--------------------------------------------------------------------------------------------
 // Class: axi4_master_write_nbk_only_read_response_out_of_order_seq
 // Extends the axi4_master_nbk_base_seq and randomises the req item
